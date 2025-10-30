@@ -1,4 +1,4 @@
-export module Piece;
+export module piece;
 import <iostream>;
 
 namespace Quarto
@@ -14,7 +14,7 @@ namespace Quarto
 		enum class Height : uint8_t 
 		{
 			SHORT,
-			TALL
+			TALL 
 		};
 		enum class Shape : uint8_t 
 		{
@@ -39,11 +39,11 @@ namespace Quarto
 		Height m_height:1;
 		Shape m_shape:1;
 		Body m_body:1;
-		
-		Color getColor() const { return m_color; }
-		Height getHeight() const { return m_height; }
-		Shape getShape() const { return m_shape; }
-		Body getBody() const { return m_body; }
+	public:
+		Color GetColor() const;
+		Height GetHeight() const;
+		Shape GetShape() const;
+		Body GetBody() const;
 		
 
 	};
